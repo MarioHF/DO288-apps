@@ -4,5 +4,10 @@ source ${HTTPD_CONTAINER_SCRIPTS_PATH}/common.sh
 
 export HTTPD_RUN_BY_S2I=1
 
+
+echo "Modified by RUN script,Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info-run.html
+
+
+
 # Make Apache show 'debug' level logs during start up
 exec run-httpd -e debug $@
