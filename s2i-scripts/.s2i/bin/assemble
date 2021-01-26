@@ -15,7 +15,7 @@ cp -Rf /tmp/src/*.html ./
 
 DATE=`date "+ %Y %m %d @ %HH %MM %SS"`
 
-echo "Page built on $DATE" >> /info.html
+echo "Page built on $DATE" >> ./info.html
 
 
 ######## CUSTOMIZATION ENDS HERE ############
